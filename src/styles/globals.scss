@@ -1,0 +1,53 @@
+:root {
+  /* MAIN */
+  --color-primary: #f8fafc;
+  --color-secondary: #64748b;
+  --color-accent: #4f46e5;
+  --color-background: #ffffff;
+  --color-surface: #eef2ff;
+  --color-text: #1e293b;
+  --color-muted: #475569;
+  --color-error: #ef4444;
+  --color-success: #22c55e;
+  --color-warning: #f59e0b;
+  --color-info: #f59e0b;
+  --color-info: #f59e0b;
+
+  /* POSTS */
+  --color-reaction-like: #f43f5e;
+
+  /* PROFILE */
+  --color-status: #22c55e;
+  --color-profile-activity: #15803d;
+}
+
+html,
+body {
+  max-width: 100vw;
+  overflow-x: hidden;
+}
+
+body {
+  color: var(--color-text);
+  background: var(--color-background);
+  font-family: Arial, Helvetica, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+@media (prefers-color-scheme: dark) {
+  html {
+    color-scheme: dark;
+  }
+}
