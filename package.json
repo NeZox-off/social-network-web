@@ -1,32 +1,35 @@
 {
-  "name": "social-network-web",
-  "version": "0.1.0",
-  "private": true,
-  "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start",
-    "lint": "next lint"
-  },
-  "dependencies": {
-    "@phosphor-icons/react": "^2.1.10",
-    "@reduxjs/toolkit": "^2.8.2",
-    "class-variance-authority": "^0.7.1",
-    "next": "15.3.3",
-    "react": "^19.0.0",
-    "react-dom": "^19.0.0",
-    "react-hook-form": "^7.57.0",
-    "react-redux": "^9.2.0",
-    "zod": "^3.25.63"
-  },
-  "devDependencies": {
-    "@eslint/eslintrc": "^3",
-    "@types/node": "^20",
-    "@types/react": "^19",
-    "@types/react-dom": "^19",
-    "eslint": "^9",
-    "eslint-config-next": "15.3.3",
-    "sass": "^1.89.2",
-    "typescript": "^5"
-  }
+	"name": "social-network-web",
+	"version": "0.1.0",
+	"private": true,
+	"scripts": {
+		"dev": "next dev",
+		"build": "next build",
+		"start": "next start",
+		"lint": "next lint",
+		"prettier": "npx prettier . --write"
+	},
+	"dependencies": {
+		"@phosphor-icons/react": "^2.1.10",
+		"@reduxjs/toolkit": "^2.8.2",
+		"class-variance-authority": "^0.7.1",
+		"next": "15.3.3",
+		"prettier": "3.5.3",
+		"react": "^19.0.0",
+		"react-dom": "^19.0.0",
+		"react-hook-form": "^7.57.0",
+		"react-redux": "^9.2.0",
+		"swr": "^2.3.3",
+		"zod": "^3.25.63"
+	},
+	"devDependencies": {
+		"@eslint/eslintrc": "^3",
+		"@types/node": "^20",
+		"@types/react": "^19",
+		"@types/react-dom": "^19",
+		"eslint": "^9",
+		"eslint-config-next": "15.3.3",
+		"sass": "^1.89.2",
+		"typescript": "^5"
+	}
 }
