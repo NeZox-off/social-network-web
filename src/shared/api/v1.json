@@ -1,0 +1,20 @@
+{
+	"openapi": "3.0.0",
+	"info": {
+		"title": "NEX Social API",
+		"version": "1.0"
+	},
+	"paths": {},
+	"components": {
+		"schemas": {
+			"Error": {
+				"type": "object",
+				"required": ["code", "message"],
+				"properties": {
+					"code": { "type": "number" },
+					"message": { "type": "string" }
+				}
+			}
+		}
+	}
+}

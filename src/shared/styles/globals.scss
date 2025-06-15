@@ -1,0 +1,59 @@
+@use './ui/index';
+
+/* MAIN */
+$color-primary: #f8fafc;
+$color-secondary: #64748b;
+$color-accent: #4f46e5;
+$color-background: #ffffff;
+$color-surface: #eef2ff;
+$color-text: #1e293b;
+$color-muted: #475569;
+$color-error: #ef4444;
+$color-success: #22c55e;
+$color-warning: #f59e0b;
+$color-info: #f59e0b;
+$color-info: #f59e0b;
+
+$color-white: #fff;
+$color-black: #000;
+
+/* POSTS */
+$color-reaction-like: #f43f5e;
+
+/* PROFILE */
+$color-status: #22c55e;
+$color-profile-activity: #15803d;
+
+$font: var(--font-plus-jakarta);
+
+html,
+body {
+	height: 100%;
+}
+
+body {
+	color: var(--color-text);
+	background: var(--color-background);
+	font-weight: 400;
+	font-family: $font, sans-serif;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+* {
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+}
+
+a {
+	color: inherit;
+	text-decoration: none;
+}
+
+ul,
+ol,
+li {
+	list-style-type: none;
+}
+

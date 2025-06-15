@@ -1,0 +1,5 @@
+@mixin default-button {
+    display: inline-flex;
+    color: $color-white;
+    background-color: $color-accent;
+}
