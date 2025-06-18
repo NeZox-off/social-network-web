@@ -1,7 +1,0 @@
-@mixin default-input-settings {
-	display: inline-flex;
-}
-
-.input-default {
-	@include default-input-settings;
-}

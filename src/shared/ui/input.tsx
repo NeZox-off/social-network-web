@@ -2,7 +2,7 @@ import { ComponentProps } from 'react'
 import { cn } from '@/shared/lib/utils'
 import { cva, type VariantProps } from 'class-variance-authority'
 
-const inputVariants = cva('default', {
+const inputVariants = cva('', {
 	variants: {
 		variant: {
 			default: 'input-default',
@@ -14,7 +14,7 @@ const inputVariants = cva('default', {
 export const Input = ({
 	type = 'text',
 	className,
-	variant,
+	variant = 'default',
 	ref,
 	...props
 }: ComponentProps<'input'> & VariantProps<typeof inputVariants>) => {

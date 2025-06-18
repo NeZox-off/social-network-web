@@ -4,7 +4,7 @@ Stack:
 
 - React (Next.js)
 - TypeScript
-- SCSS
+- TailwindCSS
 - Redux Toolkit
 - SWR
 - React Hook Form

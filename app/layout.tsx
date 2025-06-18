@@ -1,6 +1,6 @@
 import type { Metadata } from 'next'
 import localFont from 'next/font/local'
-import '@/shared/styles/globals.scss'
+import './globals.css'
 
 const plusJakartaSans = localFont({
 	src: [
