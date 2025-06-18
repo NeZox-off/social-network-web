@@ -2,7 +2,7 @@ import { ComponentProps } from 'react'
 import { cn } from '@/shared/lib/utils'
 import { cva, type VariantProps } from 'class-variance-authority'
 
-const inputVariants = cva('', {
+const inputVariants = cva('inline-flex p-4', {
 	variants: {
 		variant: {
 			default: 'input-default',

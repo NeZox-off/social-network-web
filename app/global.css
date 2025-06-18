@@ -1,0 +1,28 @@
+@import 'tailwindcss';
+
+@theme {
+	--color-primary: #1e293b;
+	--color-secondary: #4f46e5;
+
+	--background-input-primary: #eef2ff;
+	--border-input-primary: #d4d7e3;
+	--color-input-primary: #475569;
+}
+
+body {
+	@apply box-border m-0 p-0;
+}
+
+ul,
+ol,
+li {
+	@apply outline-none border-none;
+}
+
+a {
+	@apply text-secondary no-underline;
+}
+
+p {
+	@apply text-primary;
+}

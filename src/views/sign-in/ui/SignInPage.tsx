@@ -20,9 +20,9 @@ export const SignInPage = ({}: SignInPageProps) => {
 		resolver: zodResolver(loginFormSchema),
 	})
 	return (
-		<article className="p-8 h-dvh w-full">
+		<article className="p-8 h-dvh w-full flex justify-center items-center">
 			<div className="container mx-auto px-3">
-				<div className="w-full flex flex-col justify-center items-center">
+				<div className="flex flex-col items-center">
 					<div className="max-w-[26.875rem] flex flex-col">
 						<div className="mb-12">
 							<h1 className="text-4xl text-slate-900 font-bold  mb-7">
