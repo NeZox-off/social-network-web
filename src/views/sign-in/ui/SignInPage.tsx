@@ -23,8 +23,8 @@ export const SignInPage = ({}: SignInPageProps) => {
 		<article className="p-8 h-dvh w-full flex justify-center items-center">
 			<div className="container mx-auto px-3">
 				<div className="flex flex-col items-center">
-					<div className="max-w-[26.875rem] flex flex-col">
-						<div className="mb-12">
+					<div className="max-w-[26.875rem] flex flex-col space-y-12 mb-28">
+						<div>
 							<h1 className="text-4xl text-slate-900 font-bold  mb-7">
 								Welcome Back 👋
 							</h1>
@@ -34,10 +34,10 @@ export const SignInPage = ({}: SignInPageProps) => {
 							</p>
 						</div>
 						<form action="" className="flex flex-col w-full items-end space-y-6">
-							<div className="flex flex-col">
-								<Label className={cn()}>
+							<div className="flex flex-col w-full space-y-6">
+								<Label className="w-full">
 									Email
-									<Input {...register('email')} className={cn()} />
+									<Input variant={"primary"} type='text' {...register('email')} />
 								</Label>
 								<Label className={cn()}>
 									Password
@@ -45,16 +45,16 @@ export const SignInPage = ({}: SignInPageProps) => {
 								</Label>
 							</div>
 							<Link href={routeConfig.password_recovery}>Forgot Password?</Link>
-							<Button variant={'primary'} className="">
+							<Button variant={'primary'} className="w-full">
 								Sign In
 							</Button>
 						</form>
-						<p className="">
+						<p className="text-center">
 							Don&apos;t you have an account?{' '}
 							<Link href={routeConfig.sign_up}>Sign up</Link>
 						</p>
 					</div>
-					<p>© 2025 ALL RIGHTS RESERVED</p>
+					<p className='text-muted'>© 2025 ALL RIGHTS RESERVED</p>
 				</div>
 			</div>
 		</article>

@@ -3,14 +3,19 @@
 @theme {
 	--color-primary: #1e293b;
 	--color-secondary: #4f46e5;
+	--color-muted: #475569;
 
-	--background-input-primary: #eef2ff;
-	--border-input-primary: #d4d7e3;
-	--color-input-primary: #475569;
+	--color-input-primary: #eef2ff;
+	--color-input-border-primary: #c7d2fe;
+	--color-input-text-primary: #475569;
+
+	--color-btn-primary: #4f46e5;
+	--color-btn-text-primary: #fff;
+	--color-btn-border-primary: #4f46e5;
 }
 
 body {
-	@apply box-border m-0 p-0;
+	@apply text-primary text-base font-normal box-border m-0 p-0;
 }
 
 ul,
@@ -21,8 +26,4 @@ li {
 
 a {
 	@apply text-secondary no-underline;
-}
-
-p {
-	@apply text-primary;
 }
