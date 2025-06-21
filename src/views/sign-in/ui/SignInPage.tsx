@@ -2,7 +2,6 @@
 import { routeConfig } from '@/shared/config'
 import { Button, Input, Label } from '@/shared/ui'
 import Link from 'next/link'
-import { cn } from '@/shared/lib/utils'
 import { useForm } from 'react-hook-form'
 import { zodResolver } from '@hookform/resolvers/zod'
 import { loginFormSchema } from '../model/schema'
@@ -13,7 +12,6 @@ export const SignInPage = ({}: SignInPageProps) => {
 	const {
 		register,
 		handleSubmit,
-		formState: { errors },
 	} = useForm({
 		resolver: zodResolver(loginFormSchema),
 		mode: 'onSubmit',
@@ -42,29 +40,26 @@ export const SignInPage = ({}: SignInPageProps) => {
 							className="flex flex-col w-full items-end space-y-6"
 						>
 							<div className="w-full space-y-6">
-								<div className="space-y-2">
-									<Label className="w-full">
-										Email
-										<Input variant={'primary'} type="text" {...register('email')} />
-									</Label>
-									{errors.email && (
-										<p className={cn('text-red-500/70')}>{errors.email.message}</p>
-									)}
-								</div>
-								<div className="space-y-2">
-									<Label>
-										Password
-										<Input
-											variant={'primary'}
-											className="pr-12"
-											type="password"
-											{...register('password')}
-										/>
-									</Label>
-									{errors.password && (
-										<p className={cn('text-red-500/70')}>{errors.password.message}</p>
-									)}
-								</div>
+								<Label className="w-full">
+									Email
+									<Input
+										placeholder="Example@email.com"
+										variant={'primary'}
+										type="text"
+										{...register('email')}
+									/>
+								</Label>
+
+								<Label>
+									Password
+									<Input
+										placeholder="At least 8 characters"
+										variant={'primary'}
+										className="pr-12"
+										type="password"
+										{...register('password')}
+									/>
+								</Label>
 							</div>
 							<Link href={routeConfig.password_recovery}>Forgot Password?</Link>
 							<Button
