@@ -25,9 +25,9 @@ export const SignInPage = ({}: SignInPageProps) => {
 		<article className="p-8 h-dvh w-full flex justify-center items-center">
 			<div className="container mx-auto px-3">
 				<div className="flex flex-col items-center">
-					<div className="max-w-[26.875rem] flex flex-col space-y-12 mb-28">
+					<div className="max-w-[26.875rem] flex flex-col space-y-12 mb-20">
 						<div>
-							<h1 className="text-4xl text-slate-900 font-bold text-center mb-7">
+							<h1 className="text-4xl text-slate-900 font-bold text-center mb-2">
 								Welcome Back 👋
 							</h1>
 							<p className="text-xl">
@@ -37,7 +37,7 @@ export const SignInPage = ({}: SignInPageProps) => {
 						</div>
 						<form
 							onSubmit={handleSubmit(onSubmitSignInForm)}
-							className="flex flex-col w-full items-end space-y-6"
+							className="flex flex-col w-full items-end space-y-3"
 						>
 							<div className="w-full space-y-6">
 								<Label className="w-full">
