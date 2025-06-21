@@ -6,7 +6,7 @@ class RouteConfig {
 	settings = '/settings'
 	help = '/help'
 	sign_in = '/a/sign-in'
-	sign_up = '/a/sign_-up'
+	sign_up = '/a/sign-up'
 	password_recovery = '/a/password-recovery'
 }
 
