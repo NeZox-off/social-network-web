@@ -1,4 +1,4 @@
-import { ComponentProps } from 'react'
+import { ComponentProps, memo } from 'react'
 import { cn } from '@/shared/lib/utils'
 import { cva, VariantProps } from 'class-variance-authority'
 
@@ -7,23 +7,28 @@ const buttonVariants = cva(
 	{
 		variants: {
 			variant: {
-				primary: 'text-btn-text-primary bg-btn-primary active:bg-btn-primary/80 hover:bg-btn-primary/80 focus:bg-btn-primary/80',
+				primary:
+					'text-btn-text-primary bg-btn-primary active:bg-btn-primary/80 hover:bg-btn-primary/80 focus:bg-btn-primary/80',
 			},
 		},
 	}
 )
 
-export const Button = ({
-	className,
-	type = 'button',
-	variant,
-	...props
-}: ComponentProps<'button'> & VariantProps<typeof buttonVariants>) => {
-	return (
-		<button
-			type={type}
-			className={cn(buttonVariants({ variant, className }))}
-			{...props}
-		/>
-	)
-}
+export const Button = memo(
+	({
+		className,
+		type = 'button',
+		variant,
+		...props
+	}: ComponentProps<'button'> & VariantProps<typeof buttonVariants>) => {
+		return (
+			<button
+				type={type}
+				className={cn(buttonVariants({ variant, className }))}
+				{...props}
+			/>
+		)
+	}
+)
+
+Button.displayName = 'Button'

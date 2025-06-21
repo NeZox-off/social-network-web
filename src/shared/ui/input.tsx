@@ -1,4 +1,4 @@
-import { ComponentProps } from 'react'
+import { ComponentProps, memo } from 'react'
 import { cn } from '@/shared/lib/utils'
 import { cva, type VariantProps } from 'class-variance-authority'
 
@@ -15,19 +15,23 @@ const inputVariants = cva(
 	}
 )
 
-export const Input = ({
-	type = 'text',
-	className,
-	variant,
-	ref,
-	...props
-}: ComponentProps<'input'> & VariantProps<typeof inputVariants>) => {
-	return (
-		<input
-			ref={ref}
-			type={type}
-			className={cn(inputVariants({ variant, className }))}
-			{...props}
-		/>
-	)
-}
+export const Input = memo(
+	({
+		type = 'text',
+		className,
+		variant,
+		ref,
+		...props
+	}: ComponentProps<'input'> & VariantProps<typeof inputVariants>) => {
+		return (
+			<input
+				ref={ref}
+				type={type}
+				className={cn(inputVariants({ variant, className }))}
+				{...props}
+			/>
+		)
+	}
+)
+
+Input.displayName = 'Input'
