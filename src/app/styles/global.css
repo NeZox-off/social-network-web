@@ -20,6 +20,10 @@
 
 	--color-sidebar-border: #eef2ff;
 
+	--color-status-success: #22c55e;
+	--color-status-warning: #c58722;
+	--color-status-error: #c52222;
+
 	--animate-fade-in: fadeIn 0.15 linear;
 
 	@keyframes fadeIn {

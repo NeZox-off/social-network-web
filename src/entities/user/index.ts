@@ -1,2 +1,2 @@
-export * from "./ui/UserAvatar"
-export * from "./ui/UserProfileSidebar"
+export { UserAvatar } from './ui/UserAvatar'
+export { UserProfileSidebar } from './ui/UserProfileSidebar'

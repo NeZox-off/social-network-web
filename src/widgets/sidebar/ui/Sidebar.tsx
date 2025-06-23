@@ -1,6 +1,7 @@
 import { UserProfileSidebar } from '@/entities/user'
 import { InputSearch } from './InputSearch'
 import { Navigation } from './Navigation'
+import { user } from '@/shared/config'
 
 interface SidebarProps {}
 
@@ -12,7 +13,7 @@ export const Sidebar = ({}: SidebarProps) => {
 				<InputSearch />
 				<Navigation />
 			</div>
-			<UserProfileSidebar />
+			<UserProfileSidebar user={user} />
 		</aside>
 	)
 }
