@@ -1,1 +1,1 @@
-export { Activitybar } from './ui/Activitybar'
+export { Activitybar } from './ui'

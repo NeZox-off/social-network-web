@@ -8,6 +8,7 @@ interface UserAvatarProps {
 	online_status: OnlineStatusEnum
 	width: number | `${number}` | undefined
 	height: number | `${number}` | undefined
+	className?: string | undefined
 }
 
 export const UserAvatar = ({
@@ -16,6 +17,7 @@ export const UserAvatar = ({
 	online_status = OnlineStatusEnum.ONLINE,
 	width = 40,
 	height = 40,
+	className
 }: UserAvatarProps) => {
 	const status_color = {
 		online: 'bg-status-success',
@@ -37,7 +39,12 @@ export const UserAvatar = ({
 					height={height}
 				/>
 			) : (
-				<div className="text-center min-w-full min-h-full place-content-center bg-icon-primary/40 font-bold border border-white/10 rounded-full">
+				<div
+					className={cn(
+						'text-center min-w-full min-h-full place-content-center bg-icon-primary/40 font-bold border border-white/10 rounded-full',
+						className
+					)}
+				>
 					{name.slice(0, 1).toUpperCase()}
 				</div>
 			)}

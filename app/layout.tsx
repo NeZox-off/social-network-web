@@ -1,6 +1,7 @@
 import type { Metadata } from 'next'
 import localFont from 'next/font/local'
 import '../src/app/styles/global.css'
+import { Layout } from '@/app/ui'
 
 const plusJakartaSans = localFont({
 	src: [
@@ -36,7 +37,9 @@ export default function RootLayout({
 }>) {
 	return (
 		<html lang="en">
-			<body className={`${plusJakartaSans.className}`}>{children}</body>
+			<body className={`${plusJakartaSans.className}`}>
+				<Layout>{children}</Layout>
+			</body>
 		</html>
 	)
 }

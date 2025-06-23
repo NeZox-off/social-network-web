@@ -1,2 +1,3 @@
 export { useDisplayAnimation } from './hooks'
-export type { OnlineStatusEnum, UserRoleEnum, UserType } from './types'
+export type { UserType, UUID } from './types'
+export { OnlineStatusEnum, UserRoleEnum } from './types'

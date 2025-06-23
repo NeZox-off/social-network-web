@@ -1,6 +1,8 @@
 class RouteConfig {
 	feed = '/'
 	stories = '/stories'
+	user = '/u/'
+	explore_people = '/explore/p/'
 	videos = '/videos'
 	friends = '/friends'
 	apis = '/apis'

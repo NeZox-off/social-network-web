@@ -5,6 +5,8 @@
 	--color-secondary: #4f46e5;
 	--color-muted: #475569;
 
+	--color-white-light: #e2e8f0;
+
 	--color-counter: #a5b4fc;
 	--color-counter-bg: #eef2ff;
 
@@ -47,5 +49,5 @@ li {
 }
 
 a {
-	@apply text-inherit no-underline;
+	@apply no-underline;
 }

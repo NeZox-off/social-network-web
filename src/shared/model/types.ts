@@ -1,3 +1,5 @@
+export type { UUID } from 'crypto'
+
 export enum UserRoleEnum {
 	'BASIC' = 'Basic Member',
 }
