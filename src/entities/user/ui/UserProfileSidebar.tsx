@@ -9,7 +9,7 @@ interface UserProfileSidebarProps {
 
 export const UserProfileSidebar = ({ user }: UserProfileSidebarProps) => {
 	return (
-		<div className="flex items-center rounded-full p-1 justify-between transition-colors duration-150 hover:bg-counter/40">
+		<div className="flex items-center p-1 justify-between">
 			<div className="flex items-center gap-3">
 				<UserAvatar
 					avatar={user.avatar}
@@ -23,7 +23,7 @@ export const UserProfileSidebar = ({ user }: UserProfileSidebarProps) => {
 					<p className="text-sm font-medium">{user.role}</p>
 				</div>
 			</div>
-			<Button className="px-1.5 p-1.5 rounded-full bg-transparent hover:bg-counter/80">
+			<Button className="px-1.5 p-1.5 rounded-full bg-transparent hover:bg-zumthor-100 hover:text-blue-violet-600">
 				<Icon name="SignOut" size={24} />
 			</Button>
 		</div>

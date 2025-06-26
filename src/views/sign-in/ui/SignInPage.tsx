@@ -9,10 +9,7 @@ import { loginFormSchema } from '../model/schema'
 interface SignInPageProps {}
 
 export const SignInPage = ({}: SignInPageProps) => {
-	const {
-		register,
-		handleSubmit,
-	} = useForm({
+	const { register, handleSubmit } = useForm({
 		resolver: zodResolver(loginFormSchema),
 		mode: 'onSubmit',
 	})
@@ -27,7 +24,7 @@ export const SignInPage = ({}: SignInPageProps) => {
 				<div className="flex flex-col items-center">
 					<div className="max-w-[26.875rem] flex flex-col space-y-12 mb-20">
 						<div>
-							<h1 className="text-4xl text-slate-900 font-bold text-center mb-2">
+							<h1 className="text-4xl text-big-stone-950 font-bold text-center mb-2">
 								Welcome Back 👋
 							</h1>
 							<p className="text-xl">
@@ -75,7 +72,7 @@ export const SignInPage = ({}: SignInPageProps) => {
 							<Link href={routeConfig.sign_up}>Sign up</Link>
 						</p>
 					</div>
-					<p className="text-muted">© 2025 ALL RIGHTS RESERVED</p>
+					<p className="text-fiord-700">© 2025 ALL RIGHTS RESERVED</p>
 				</div>
 			</div>
 		</article>

@@ -59,7 +59,7 @@ export const SignUpPage = ({}: SignUpPageProps) => {
 				<div className="flex flex-col items-center">
 					<div className="max-w-[26.875rem] flex flex-col space-y-12 mb-20">
 						<div>
-							<h1 className="text-4xl text-slate-900 font-bold text-center mb-2">
+							<h1 className="text-4xl text-big-stone-950 font-bold text-center mb-2">
 								Create an account
 							</h1>
 							<p className="text-xl">Connect with your friends today!</p>
@@ -84,7 +84,7 @@ export const SignUpPage = ({}: SignUpPageProps) => {
 							<Link href={routeConfig.password_recovery}>Forgot Password?</Link>
 							<Button
 								type="submit"
-								variant={'primary'}	
+								variant={'primary'}
 								className="w-full text-xl py-2"
 							>
 								Sign up
@@ -95,7 +95,7 @@ export const SignUpPage = ({}: SignUpPageProps) => {
 							<Link href={routeConfig.sign_in}>Sign in</Link>
 						</p>
 					</div>
-					<p className="text-muted">© 2025 ALL RIGHTS RESERVED</p>
+					<p className="text-fiord-700">© 2025 ALL RIGHTS RESERVED</p>
 				</div>
 			</div>
 		</article>

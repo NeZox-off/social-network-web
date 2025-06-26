@@ -17,7 +17,7 @@ export const UserAvatar = ({
 	online_status = OnlineStatusEnum.ONLINE,
 	width = 40,
 	height = 40,
-	className
+	className,
 }: UserAvatarProps) => {
 	const status_color = {
 		online: 'bg-status-success',
@@ -41,7 +41,7 @@ export const UserAvatar = ({
 			) : (
 				<div
 					className={cn(
-						'text-center min-w-full min-h-full place-content-center bg-icon-primary/40 font-bold border border-white/10 rounded-full',
+						'text-center min-w-full min-h-full place-content-center bg-rock-blue-200 font-bold border border-white/10 rounded-full',
 						className
 					)}
 				>

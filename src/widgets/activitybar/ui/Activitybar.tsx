@@ -13,8 +13,8 @@ const icons: IconProps['name'][] = ['ChatTeardropDots', 'BellSimple', 'GearSix']
 
 export const Activitybar = ({}: ActivitybarProps) => {
 	return (
-		<aside className="basis-96 border-l-2 border-sidebar-border sticky top-0 overflow-y-auto">
-			<header className="py-5 px-6 flex items-center justify-between sticky top-0 bg-white z-10 border-b-2 border-b-[#E2E8F0]">
+		<aside className="basis-96 border-l-2 border-zumthor-100 sticky top-0 overflow-y-auto">
+			<header className="py-5 px-6 flex items-center justify-between sticky top-0 bg-white z-10 border-b-2 border-b-zumthor-100">
 				<UserAvatar
 					name={user.fullname}
 					avatar={user.avatar}
@@ -26,7 +26,7 @@ export const Activitybar = ({}: ActivitybarProps) => {
 					{icons.map((icon) => (
 						<Button
 							key={icon}
-							className="px-3 py-3 border border-input-border-primary rounded-full hover:bg-counter/20"
+							className="px-3 py-3 border border-link-water-200 rounded-full hover:bg-zumthor-100 hover:text-blue-violet-600"
 						>
 							<Icon name={icon} size={24} />
 						</Button>

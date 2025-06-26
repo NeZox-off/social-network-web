@@ -1,4 +1,5 @@
 import { Activitybar } from '@/widgets/activitybar'
+import { Header } from '@/widgets/header'
 import { Sidebar } from '@/widgets/sidebar'
 import { PropsWithChildren } from 'react'
 
@@ -8,7 +9,10 @@ export const Layout = ({ children }: LayoutProps) => {
 	return (
 		<article className="h-dvh flex relative">
 			<Sidebar />
-			<main className="flex-1">{children}</main>
+			<main className="flex-1">
+				<Header />
+				{children}
+			</main>
 			<Activitybar />
 		</article>
 	)

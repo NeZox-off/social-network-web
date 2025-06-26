@@ -1,45 +1,129 @@
 @import 'tailwindcss';
 
 @theme {
-	--color-primary: #1e293b;
-	--color-secondary: #4f46e5;
-	--color-muted: #475569;
+	--color-blue-violet-50: #efeeff;
+	--color-blue-violet-100: #e2e0ff;
+	--color-blue-violet-200: #cac7fe;
+	--color-blue-violet-300: #aaa5fc;
+	--color-blue-violet-400: #8881f8;
+	--color-blue-violet-500: #6b63f1;
+	--color-blue-violet-600: #4f46e5;
+	--color-blue-violet-700: #4038ca;
+	--color-blue-violet-800: #3730a3;
+	--color-blue-violet-900: #332e81;
+	--color-blue-violet-950: #1e1b4b;
 
-	--color-white-light: #e2e8f0;
+	--color-big-stone-50: #f4f6fb;
+	--color-big-stone-100: #e9edf5;
+	--color-big-stone-200: #cedae9;
+	--color-big-stone-300: #a3bbd6;
+	--color-big-stone-400: #7196bf;
+	--color-big-stone-500: #4f78a8;
+	--color-big-stone-600: #3d608c;
+	--color-big-stone-700: #324d72;
+	--color-big-stone-800: #2c4360;
+	--color-big-stone-900: #293951;
+	--color-big-stone-950: #1e293b;
 
-	--color-counter: #a5b4fc;
-	--color-counter-bg: #eef2ff;
+	--color-fiord-50: #f6f7f9;
+	--color-fiord-100: #eceff2;
+	--color-fiord-200: #d5dbe2;
+	--color-fiord-300: #b0bbc9;
+	--color-fiord-400: #8596ab;
+	--color-fiord-500: #667a91;
+	--color-fiord-600: #516278;
+	--color-fiord-700: #475569;
+	--color-fiord-800: #394453;
+	--color-fiord-900: #333b47;
+	--color-fiord-950: #22272f;
 
-	--color-icon-primary: #94a3b8;
+	--color-rock-blue-50: #f4f7f9;
+	--color-rock-blue-100: #ecf0f3;
+	--color-rock-blue-200: #dce4e9;
+	--color-rock-blue-300: #c6d2db;
+	--color-rock-blue-400: #aebccb;
+	--color-rock-blue-500: #94a3b8;
+	--color-rock-blue-600: #828fa9;
+	--color-rock-blue-700: #6f7a93;
+	--color-rock-blue-800: #5c6677;
+	--color-rock-blue-900: #4d5462;
+	--color-rock-blue-950: #2d3139;
 
-	--color-input-primary: #eef2ff;
-	--color-input-border-primary: #c7d2fe;
-	--color-input-text-primary: #475569;
+	--color-periwinkle-50: #eef1ff;
+	--color-periwinkle-100: #e0e6ff;
+	--color-periwinkle-200: #c7d2fe;
+	--color-periwinkle-300: #a5b6fc;
+	--color-periwinkle-400: #8199f8;
+	--color-periwinkle-500: #637ff1;
+	--color-periwinkle-600: #4666e5;
+	--color-periwinkle-700: #3855ca;
+	--color-periwinkle-800: #3047a3;
+	--color-periwinkle-900: #2e3f81;
+	--color-periwinkle-950: #1b254b;
 
-	--color-btn-primary: #4f46e5;
-	--color-btn-text-primary: #fff;
-	--color-btn-border-primary: #4f46e5;
+	--color-link-water-50: #f5f7f9;
+	--color-link-water-100: #e8ecf1;
+	--color-link-water-200: #cbd5e1;
+	--color-link-water-300: #b9c7d7;
+	--color-link-water-400: #98abc2;
+	--color-link-water-500: #7f93b2;
+	--color-link-water-600: #6d7fa3;
+	--color-link-water-700: #616f94;
+	--color-link-water-800: #525c7b;
+	--color-link-water-900: #454d63;
+	--color-link-water-950: #2d313e;
 
-	--color-sidebar-border: #eef2ff;
+	--color-zircon-50: #eef2ff;
+	--color-zircon-100: #e0e7ff;
+	--color-zircon-200: #c7d4fe;
+	--color-zircon-300: #a5b9fc;
+	--color-zircon-400: #819df8;
+	--color-zircon-500: #6384f1;
+	--color-zircon-600: #466be5;
+	--color-zircon-700: #385aca;
+	--color-zircon-800: #304ba3;
+	--color-zircon-900: #2e4281;
+	--color-zircon-950: #1b264b;
 
-	--color-status-success: #22c55e;
-	--color-status-warning: #c58722;
-	--color-status-error: #c52222;
+	--color-black-haze-50: #f8fafc;
+	--color-black-haze-100: #e9eff5;
+	--color-black-haze-200: #cedde9;
+	--color-black-haze-300: #a3c1d6;
+	--color-black-haze-400: #729fbe;
+	--color-black-haze-500: #5083a7;
+	--color-black-haze-600: #3d698c;
+	--color-black-haze-700: #325572;
+	--color-black-haze-800: #2d495f;
+	--color-black-haze-900: #293e51;
+	--color-black-haze-950: #1b2836;
 
-	--animate-fade-in: fadeIn 0.15 linear;
+	--color-zumthor-50: #f4f7fa;
+	--color-zumthor-100: #e2e8f0;
+	--color-zumthor-200: #d4dde9;
+	--color-zumthor-300: #b6c7da;
+	--color-zumthor-400: #93aac7;
+	--color-zumthor-500: #7991b8;
+	--color-zumthor-600: #677ca9;
+	--color-zumthor-700: #5b6c9a;
+	--color-zumthor-800: #4e5a7f;
+	--color-zumthor-900: #424b66;
+	--color-zumthor-950: #2b3040;
 
-	@keyframes fadeIn {
-		0% {
-			opacity: 0%;
-		}
-		100% {
-			opacity: 100%;
-		}
-	}
+	--color-salem-50: #f0fdf5;
+	--color-salem-100: #dcfce8;
+	--color-salem-200: #bbf7d1;
+	--color-salem-300: #86efad;
+	--color-salem-400: #4ade81;
+	--color-salem-500: #22c55f;
+	--color-salem-600: #16a34b;
+	--color-salem-700: #15803d;
+	--color-salem-800: #166534;
+	--color-salem-900: #14532c;
+	--color-salem-950: #052e14;
 }
 
 body {
-	@apply text-primary text-base font-normal box-border m-0 p-0;
+	@apply text-big-stone-950 text-base font-normal box-border m-0 p-0;
 }
 
 ul,

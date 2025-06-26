@@ -7,7 +7,7 @@ interface SidebarProps {}
 
 export const Sidebar = ({}: SidebarProps) => {
 	return (
-		<aside className="py-8 px-4 flex flex-col justify-between basis-xs border-r-2 border-sidebar-border sticky top-0">
+		<aside className="py-8 px-4 flex flex-col justify-between basis-xs border-r-2 border-zumthor-100 sticky top-0">
 			<div className="space-y-8">
 				<h1 className="font-bold text-4xl">Nex</h1>
 				<InputSearch />

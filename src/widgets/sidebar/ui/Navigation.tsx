@@ -45,13 +45,17 @@ export const Navigation = ({}: NavigationProps) => {
 				<li key={link.title}>
 					<Link
 						href={link.link}
-						className="text-primary flex font-bold items-center justify-between p-3 transition-colors duration-150 rounded hover:bg-counter/20"
+						className="text-big-stone-950 flex font-bold items-center justify-between p-3 transition-colors duration-150 hover:bg-zumthor-100"
 					>
 						<span className="inline-flex gap-2 items-center">
-							<Icon name={link.icon} size={24} className="text-icon-primary" />
+							<Icon name={link.icon} size={24} className="text-rock-blue-500" />
 							{link.title}
 						</span>
-						{!!link.notificationCount && <span className='py-0.5 px-2.5 text-center h-7 border border-counter bg-counter-bg rounded-full text-secondary text-sm font-semibold'>{link.notificationCount}</span>}
+						{!!link.notificationCount && (
+							<span className="py-0.5 px-2.5 text-center h-7 border border-zumthor-300 bg-zircon-50 rounded-full text-blue-violet-600 text-sm font-semibold">
+								{link.notificationCount}
+							</span>
+						)}
 					</Link>
 				</li>
 			))}
