@@ -25,7 +25,7 @@ export const UserAvatar = ({
 	}
 	return (
 		<div
-			className="relative"
+			className="relative rounded-full"
 			style={{
 				width,
 				height,
@@ -37,6 +37,7 @@ export const UserAvatar = ({
 					alt={'Avatar image is ' + name}
 					width={width}
 					height={height}
+					className='rounded-full'
 				/>
 			) : (
 				<div
@@ -51,7 +52,7 @@ export const UserAvatar = ({
 			{online_status !== OnlineStatusEnum.OFFLINE && (
 				<span
 					className={cn(
-						'absolute bottom-0 right-0 w-3 h-3 rounded-full border border-white',
+						'absolute bottom-0 right-0 w-3 h-3	 border border-white',
 						status_color[online_status]
 					)}
 				></span>

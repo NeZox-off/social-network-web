@@ -135,3 +135,6 @@ li {
 a {
 	@apply no-underline;
 }
+
+
+@plugin 'tailwind-scrollbar';

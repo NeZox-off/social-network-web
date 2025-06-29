@@ -13,11 +13,11 @@ const icons: IconProps['name'][] = ['ChatTeardropDots', 'BellSimple', 'GearSix']
 
 export const Activitybar = ({}: ActivitybarProps) => {
 	return (
-		<aside className="basis-96 border-l-2 border-zumthor-100 sticky top-0 overflow-y-auto">
+		<aside className="basis-96 border-l-2 border-zumthor-100 sticky top-0 overflow-y-auto shrink-0">
 			<header className="py-5 px-6 flex items-center justify-between sticky top-0 bg-white z-10 border-b-2 border-b-zumthor-100">
 				<UserAvatar
-					name={user.fullname}
-					avatar={user.avatar}
+					name={user.profile.fullname}
+					avatar={user.profile.pictureUrl}
 					online_status={OnlineStatusEnum.ONLINE}
 					width={48}
 					height={48}
