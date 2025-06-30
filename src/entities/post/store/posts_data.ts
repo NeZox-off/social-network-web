@@ -48,21 +48,21 @@ export const TEST_POSTS: Post[] = [
 			questions: [
 				{
 					title: 'JavaScript',
-					count: 0,
+					count: 82400,
 					isSelected: false,
 				},
 				{
 					title: 'Python',
-					count: 0,
-					isSelected: false,
+					count: 18222,
+					isSelected: true,
 				},
 				{
 					title: 'Java',
-					count: 0,
+					count: 29943,
 					isSelected: false,
 				},
 			],
-			date: '2025-06-29',
+			date: 'Jun 25, 2029',
 		},
 		likes: {
 			count: 100,
