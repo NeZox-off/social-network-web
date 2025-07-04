@@ -1,23 +1,16 @@
 import { User } from '@/shared/model'
 
 export const enum PostType {
-	'DEFAULT' = 'default',
 	'QUESTIONNAIRE' = 'questionnaire',
 }
 
 type PostMap = {
-	[PostType.DEFAULT]: {
-		type: PostType.DEFAULT
-		description: string | null
-		tags: `#${string}`[]
-		post_image: string | null
-		date: Date | string | number
-	}
 	[PostType.QUESTIONNAIRE]: {
 		type: PostType.QUESTIONNAIRE
 		description: string
 		tags: `#${string}`[]
 		questions: Question[]
+		post_image: string | null
 		date: Date | string | number
 	}
 }

@@ -1,0 +1,2 @@
+export  { Post } from './ui'
+

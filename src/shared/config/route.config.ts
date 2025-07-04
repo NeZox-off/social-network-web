@@ -4,7 +4,7 @@ class RouteConfig {
 	user = '/u/'
 	explore_people = '/explore/p/'
 	videos = '/videos'
-	friends = '/friends'
+	chat = '/c'
 	apis = '/apis'
 	settings = '/settings'
 	help = '/help'

@@ -1,0 +1,1 @@
+export { useTotalPostVotes } from './totalPostVotes'

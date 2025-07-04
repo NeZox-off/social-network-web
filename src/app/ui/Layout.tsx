@@ -1,19 +1,31 @@
+import { cn } from '@/shared/lib'
 import { Activitybar } from '@/widgets/activitybar'
 import { Header } from '@/widgets/header'
 import { Sidebar } from '@/widgets/sidebar'
-import { PropsWithChildren } from 'react'
+import { ComponentProps, PropsWithChildren } from 'react'
 
-interface LayoutProps extends PropsWithChildren {}
+interface LayoutProps extends PropsWithChildren {
+	isSidebar?: boolean
+	isHeader?: boolean
+	isActivitybar?: boolean
+	className?: string
+}
 
-export const Layout = ({ children }: LayoutProps) => {
+export const Layout = ({
+	children,
+	isSidebar = true,
+	isActivitybar = true,
+	isHeader = true,
+	className,
+}: LayoutProps & ComponentProps<'div'>) => {
 	return (
 		<article className="h-dvh flex relative">
-			<Sidebar />
+			{isSidebar && <Sidebar />}
 			<main className="flex-1 overflow-x-hidden overflow-y-auto scrollbar-thin scrollbar-thumb-zumthor-100 scrollbar-track-sky-300">
-				<Header />
-				<div className='px-8 py-6'>{children}</div>
+				{isHeader && <Header />}
+				<div className={cn('px-32 py-6', className)}>{children}</div>
 			</main>
-			<Activitybar />
+			{isActivitybar && <Activitybar />}
 		</article>
 	)
 }

@@ -1,4 +1,4 @@
-import { Post } from './ui'
+export { QuestionPost } from './ui'
 export { TEST_POSTS } from './store'
-
-export default Post;
+export type { Post } from './model'
+export { PostType } from './model'

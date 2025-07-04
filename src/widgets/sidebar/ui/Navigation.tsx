@@ -32,9 +32,9 @@ const navigationLinks: NavigationLink[] = [
 		notificationCount: 0,
 	},
 	{
-		icon: 'Users',
-		title: 'Friends',
-		link: routeConfig.friends,
+		icon: 'Chat',
+		title: 'Chat',
+		link: routeConfig.chat,
 		notificationCount: 0,
 	},
 ]
